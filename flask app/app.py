@@ -12,7 +12,11 @@ def contact():
 @app.route('/skills')
 def homepage():
     return render_template('skills.html')
+    
+@app.route('/thanks')
+def homepage():
+    return render_template('thanks.html')
 
 
 if __name__=='__main__':
-    app.run(debug = True)
+    app.run(debug = False,host='0.0.0.0')
